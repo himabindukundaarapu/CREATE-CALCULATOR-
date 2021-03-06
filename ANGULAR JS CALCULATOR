@@ -1,0 +1,47 @@
+<html>
+<head>
+<title>code for angular js calculator<\title>
+<\head>
+<body>
+<script src="http://ajar.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.j">
+<\script>
+<form name="myform">
+<script src="angular.min.js"><\script>
+<script src="calculator.js"><\script>
+<div ng-app="calculator app" ng-controller="calculator controller">
+<p><input type="number" ng-model="a"><\p>
+<p><input type="number" ng-model="b"><\P>
+<\form>
+angular.module('calculator app')
+.controller('calculator controller',function($scope)
+{
+$scope.result=function()
+{
+if($scope.operator=="+")
+{
+$scope.a+$scope.b;
+return result;
+}
+}
+if($scope.operator=="-")
+{
+$scope.a-$scope.b;
+return result;
+}
+}
+if($scope.operator=="*")
+{
+$scope.a*$scope.b;
+return result;
+}
+}
+if($scope.operator=="/")
+{
+$scope.a/$scope.b;
+return result;
+}
+}
+}
+<\div>
+<\body>
+<\html>
